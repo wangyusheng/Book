@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>book.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DefaultServlet</servlet-name>
+		<servlet-class>book.servlet.DefaultServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>book.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<servlet-class>book.servlet.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SettingServlet</servlet-name>
+		<servlet-class>book.servlet.SettingServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BookBusiness</servlet-name>
+		<servlet-class>book.servlet.BookBusiness</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BaseServlet</servlet-name>
+    <servlet-class>book.servlet.BaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookExchangeServlet</servlet-name>
+    <servlet-class>book.servlet.BookExchangeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookBusinessSpecial</servlet-name>
+    <servlet-class>book.servlet.BookBusinessSpecial</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChannelIdServlet</servlet-name>
+    <servlet-class>book.servlet.ChannelIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClubBusiness</servlet-name>
+    <servlet-class>book.servlet.ClubBusiness</servlet-class>
+  
+  </servlet>
+	<servlet>
+	    <description>This is the description of my J2EE component</description>
+	    <display-name>This is the display name of my J2EE component</display-name>
+	    <servlet-name>InfobuyBusiness</servlet-name>
+	    <servlet-class>book.servlet.InfobuyBusiness</servlet-class>
+	  </servlet>	
+	<servlet>
+	    <description>This is the description of my J2EE component</description>
+	    <display-name>This is the display name of my J2EE component</display-name>
+	    <servlet-name>PosterBusiness</servlet-name>
+	    <servlet-class>book.servlet.PosterBusiness</servlet-class>
+	  </servlet>	
+	<servlet>
+	    <description>This is the description of my J2EE component</description>
+	    <display-name>This is the display name of my J2EE component</display-name>
+	    <servlet-name>BookGiveBusiness</servlet-name>
+	    <servlet-class>book.servlet.PosterBusiness</servlet-class>
+	  </servlet>	
+
+
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DefaultServlet</servlet-name>
+		<url-pattern>/default</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SettingServlet</servlet-name>
+		<url-pattern>/setting</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookBusiness</servlet-name>
+		<url-pattern>/bookBusiness</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BaseServlet</servlet-name>
+    <url-pattern>/base</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookExchangeServlet</servlet-name>
+    <url-pattern>/bookExchange</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookGiveServlet</servlet-name>
+    <url-pattern>/bookGive</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookBusinessSpecial</servlet-name>
+    <url-pattern>/bookBusinessSpecial</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChannelIdServlet</servlet-name>
+    <url-pattern>/channelId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClubBusiness</servlet-name>
+    <url-pattern>/clubBusiness</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>InfobuyBusiness</servlet-name>
+    <url-pattern>/infobuyBusiness</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>PosterBusiness</servlet-name>
+    <url-pattern>/posterBusiness</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
