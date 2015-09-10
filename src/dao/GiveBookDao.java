@@ -307,17 +307,7 @@ public class GiveBookDao {
 			StringBuilder sqlString = new StringBuilder(
 					"select obtain_user from book_give_info where obtain_book in(");
 			StringBuilder sb = new StringBuilder();
-			for (int i = 0, size = allObtainBookId.size(); i < size; i++) {
-				sb.append("?,");
-
-			}
-			sqlString.append(sb.substring(0, sb.length() - 1));
-			sqlString.append(")");
-
-			pstmt = conn.prepareStatement(sqlString.toString());
-			for (int i = 0, size = allObtainBookId.size(); i < size; i++) {
-				pstmt.setInt(i, allObtainBookId.get(i));
-			}
+			
 			rs = pstmt.executeQuery();
 			// еп╤о╫А╧Ш
 			while (rs.next()) {

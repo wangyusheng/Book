@@ -2,83 +2,23 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
-	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-dbcp-1.4.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-pool-1.6.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.4-bin.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/json-lib-2.4-jdk15.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-beanutils-1.7.0.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-logging.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/ezmorph-1.0.3.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/org.apache.commons-fileupload-1.2.1.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/commons-io-1.4.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/gson-2.2.2.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/bccs-api-3.0.1.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="lib/CCP_REST_SDK_JAVA_v2.6r.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/bccs-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/CCP_REST_SDK_JAVA_v2.6r.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="lib" path="F:/Server Program/Book/lib/org.apache.commons-fileupload-1.2.1.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
