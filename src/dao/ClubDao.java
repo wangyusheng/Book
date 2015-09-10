@@ -67,7 +67,7 @@ public class ClubDao {
 	}
 
 	public JSONArray retrievalClub(int clubId, int type) {
-		System.out.println("book_id=" + clubId + "," + "type=" + type);
+		System.out.println("retrievalClub:clubId=" + clubId + ",type=" + type);
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -132,6 +132,62 @@ public class ClubDao {
 			}
 		}
 		return jsonArray;
+
+	}
+
+	/**
+	 * 搜索单个Club
+	 * 
+	 * @param clubId
+	 * @return
+	 */
+	public JSONObject retrievalClub(int clubId) {
+		System.out.println("retrievalClub:clubId=" + clubId);
+		JSONObject jsonObject = new JSONObject();
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = MySqlConnectPool.getConnection();
+			// 获得statement对象
+			pstmt = conn
+					.prepareStatement("select * from club_info where club_id=?");
+			pstmt.setInt(1, clubId);
+
+			rs = pstmt.executeQuery();
+			// 判断结果
+			while (rs.next()) {
+				jsonObject.put("club_id", rs.getInt(1));
+				jsonObject.put("user_id", rs.getInt(2));
+				jsonObject.put("topic", rs.getString(3));
+				jsonObject.put("recommend_book", rs.getString(4));
+				jsonObject.put("time", rs.getString(5));
+				jsonObject.put("address", rs.getString(6));
+				jsonObject.put("enroll_num", rs.getInt(7));
+				jsonObject.put("concern_num", rs.getInt(8));
+				jsonObject.put("accusation_num", rs.getInt(9));
+				jsonObject.put("generate_time", rs.getString(10));
+				jsonObject.put("state", rs.getInt(11));
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return jsonObject;
 
 	}
 

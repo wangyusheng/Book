@@ -423,19 +423,19 @@ public class BookDao {
 				// 第一次查询
 
 				pstmt = conn
-						.prepareStatement("select * from book_info where user_id=? and type=0 order by book_id desc limit ? ");
+						.prepareStatement("select * from book_info where user_id=? order by book_id desc limit ? ");
 				pstmt.setInt(1, userId);
 				pstmt.setInt(2, SIZE);
 
 			} else if (type == 1) {
 				pstmt = conn
-						.prepareStatement("select * from book_info where book_id <? and user_id=? and type =1 order by book_id desc limit ?");
+						.prepareStatement("select * from book_info where book_id <? and user_id=? order by book_id desc limit ?");
 				pstmt.setInt(1, book_id);
 				pstmt.setInt(2, userId);
 				pstmt.setInt(3, SIZE);
 			} else if (type == 2) {
 				pstmt = conn
-						.prepareStatement("select * from book_info where book_id >? and user_id=? amd type=2 order by book_id desc limit ?");
+						.prepareStatement("select * from book_info where book_id >? and user_id=? order by book_id desc limit ?");
 				pstmt.setInt(1, book_id);
 				pstmt.setInt(2, userId);
 				pstmt.setInt(3, SIZE);
@@ -557,19 +557,19 @@ public class BookDao {
 				// 第一次查询
 
 				pstmt = conn
-						.prepareStatement("select * from book_info where user_id=? and state=0 and type=0 order by book_id desc limit ? ");
+						.prepareStatement("select * from book_info where user_id=? and state=0 order by book_id desc limit ? ");
 				pstmt.setInt(1, userId);
 				pstmt.setInt(2, SIZE);
 
 			} else if (type == 1) {
 				pstmt = conn
-						.prepareStatement("select * from book_info where book_id <? and user_id=? and state=0 and type=1 order by book_id desc limit ?");
+						.prepareStatement("select * from book_info where book_id <? and user_id=? and state=0 order by book_id desc limit ?");
 				pstmt.setInt(1, book_id);
 				pstmt.setInt(2, userId);
 				pstmt.setInt(3, SIZE);
 			} else if (type == 2) {
 				pstmt = conn
-						.prepareStatement("select * from book_info where book_id >? and user_id=? and state=0 type=2 order by book_id desc limit ?");
+						.prepareStatement("select * from book_info where book_id >? and user_id=? and state=0 order by book_id desc limit ?");
 				pstmt.setInt(1, book_id);
 				pstmt.setInt(2, userId);
 				pstmt.setInt(3, SIZE);

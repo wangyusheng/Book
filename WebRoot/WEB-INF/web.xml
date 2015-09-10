@@ -69,26 +69,10 @@
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>ClubBusiness</servlet-name>
     <servlet-class>book.servlet.ClubBusiness</servlet-class>
-  
   </servlet>
-	<servlet>
-	    <description>This is the description of my J2EE component</description>
-	    <display-name>This is the display name of my J2EE component</display-name>
-	    <servlet-name>InfobuyBusiness</servlet-name>
-	    <servlet-class>book.servlet.InfobuyBusiness</servlet-class>
-	  </servlet>	
-	<servlet>
-	    <description>This is the description of my J2EE component</description>
-	    <display-name>This is the display name of my J2EE component</display-name>
-	    <servlet-name>PosterBusiness</servlet-name>
-	    <servlet-class>book.servlet.PosterBusiness</servlet-class>
-	  </servlet>	
-	<servlet>
-	    <description>This is the description of my J2EE component</description>
-	    <display-name>This is the display name of my J2EE component</display-name>
-	    <servlet-name>BookGiveBusiness</servlet-name>
-	    <servlet-class>book.servlet.PosterBusiness</servlet-class>
-	  </servlet>	
+
+
+
 
 
 	<servlet-mapping>
@@ -126,10 +110,6 @@
     <url-pattern>/bookExchange</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>BookGiveServlet</servlet-name>
-    <url-pattern>/bookGive</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
     <servlet-name>BookBusinessSpecial</servlet-name>
     <url-pattern>/bookBusinessSpecial</url-pattern>
   </servlet-mapping>
@@ -140,14 +120,6 @@
   <servlet-mapping>
     <servlet-name>ClubBusiness</servlet-name>
     <url-pattern>/clubBusiness</url-pattern>
-  </servlet-mapping>
-    <servlet-mapping>
-    <servlet-name>InfobuyBusiness</servlet-name>
-    <url-pattern>/infobuyBusiness</url-pattern>
-  </servlet-mapping>
-    <servlet-mapping>
-    <servlet-name>PosterBusiness</servlet-name>
-    <url-pattern>/posterBusiness</url-pattern>
   </servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
